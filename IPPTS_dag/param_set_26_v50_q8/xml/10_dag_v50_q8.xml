@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='utf-8'?>
+<adag name="param_set_26_v50_q8_10_v50_q8" jobCount="50" fileCount="0" childCount="49">
+	<job id="task_1" namespace="param_set_26_v50_q8" name="Task" runtime="7.0" cores="1">
+		<uses file="task_1_out.dat" link="output" size="2000000" />
+		<uses file="task_1_out.dat" link="output" size="3000000" />
+		<uses file="task_1_out.dat" link="output" size="5000000" />
+		<uses file="task_1_out.dat" link="output" size="8000000" />
+	</job>
+	<job id="task_2" namespace="param_set_26_v50_q8" name="Task" runtime="8.0" cores="1">
+		<uses file="task_2_out.dat" link="output" size="1000000" />
+		<uses file="task_1_out.dat" link="input" size="3000000" />
+	</job>
+	<job id="task_3" namespace="param_set_26_v50_q8" name="Task" runtime="15.0" cores="1">
+		<uses file="task_3_out.dat" link="output" size="2000000" />
+		<uses file="task_3_out.dat" link="output" size="3000000" />
+		<uses file="task_3_out.dat" link="output" size="4000000" />
+		<uses file="task_1_out.dat" link="input" size="8000000" />
+	</job>
+	<job id="task_4" namespace="param_set_26_v50_q8" name="Task" runtime="14.0" cores="1">
+		<uses file="task_4_out.dat" link="output" size="1000000" />
+		<uses file="task_4_out.dat" link="output" size="5000000" />
+		<uses file="task_4_out.dat" link="output" size="6000000" />
+		<uses file="task_4_out.dat" link="output" size="8000000" />
+		<uses file="task_1_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_5" namespace="param_set_26_v50_q8" name="Task" runtime="15.0" cores="1">
+		<uses file="task_5_out.dat" link="output" size="2000000" />
+		<uses file="task_5_out.dat" link="output" size="4000000" />
+		<uses file="task_1_out.dat" link="input" size="2000000" />
+	</job>
+	<job id="task_6" namespace="param_set_26_v50_q8" name="Task" runtime="17.0" cores="1">
+		<uses file="task_6_out.dat" link="output" size="2000000" />
+		<uses file="task_2_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_7" namespace="param_set_26_v50_q8" name="Task" runtime="17.0" cores="1">
+		<uses file="task_7_out.dat" link="output" size="6000000" />
+		<uses file="task_2_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_8" namespace="param_set_26_v50_q8" name="Task" runtime="16.0" cores="1">
+		<uses file="task_8_out.dat" link="output" size="1000000" />
+		<uses file="task_8_out.dat" link="output" size="4000000" />
+		<uses file="task_8_out.dat" link="output" size="7000000" />
+		<uses file="task_3_out.dat" link="input" size="4000000" />
+	</job>
+	<job id="task_9" namespace="param_set_26_v50_q8" name="Task" runtime="3.0" cores="1">
+		<uses file="task_9_out.dat" link="output" size="5000000" />
+		<uses file="task_3_out.dat" link="input" size="2000000" />
+	</job>
+	<job id="task_10" namespace="param_set_26_v50_q8" name="Task" runtime="11.0" cores="1">
+		<uses file="task_10_out.dat" link="output" size="4000000" />
+		<uses file="task_3_out.dat" link="input" size="3000000" />
+	</job>
+	<job id="task_11" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_11_out.dat" link="output" size="8000000" />
+		<uses file="task_4_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_12" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_12_out.dat" link="output" size="9000000" />
+		<uses file="task_4_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_13" namespace="param_set_26_v50_q8" name="Task" runtime="10.0" cores="1">
+		<uses file="task_13_out.dat" link="output" size="6000000" />
+		<uses file="task_4_out.dat" link="input" size="8000000" />
+	</job>
+	<job id="task_14" namespace="param_set_26_v50_q8" name="Task" runtime="8.0" cores="1">
+		<uses file="task_14_out.dat" link="output" size="5000000" />
+		<uses file="task_4_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_15" namespace="param_set_26_v50_q8" name="Task" runtime="1.0" cores="1">
+		<uses file="task_15_out.dat" link="output" size="5000000" />
+		<uses file="task_5_out.dat" link="input" size="2000000" />
+	</job>
+	<job id="task_16" namespace="param_set_26_v50_q8" name="Task" runtime="12.0" cores="1">
+		<uses file="task_16_out.dat" link="output" size="6000000" />
+		<uses file="task_16_out.dat" link="output" size="9000000" />
+		<uses file="task_5_out.dat" link="input" size="4000000" />
+	</job>
+	<job id="task_17" namespace="param_set_26_v50_q8" name="Task" runtime="2.0" cores="1">
+		<uses file="task_17_out.dat" link="output" size="5000000" />
+		<uses file="task_6_out.dat" link="input" size="2000000" />
+	</job>
+	<job id="task_18" namespace="param_set_26_v50_q8" name="Task" runtime="13.0" cores="1">
+		<uses file="task_18_out.dat" link="output" size="9000000" />
+		<uses file="task_7_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_19" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_19_out.dat" link="output" size="6000000" />
+		<uses file="task_8_out.dat" link="input" size="7000000" />
+	</job>
+	<job id="task_20" namespace="param_set_26_v50_q8" name="Task" runtime="17.0" cores="1">
+		<uses file="task_20_out.dat" link="output" size="5000000" />
+		<uses file="task_8_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_21" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_21_out.dat" link="output" size="2000000" />
+		<uses file="task_8_out.dat" link="input" size="4000000" />
+	</job>
+	<job id="task_22" namespace="param_set_26_v50_q8" name="Task" runtime="19.0" cores="1">
+		<uses file="task_22_out.dat" link="output" size="3000000" />
+		<uses file="task_9_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_23" namespace="param_set_26_v50_q8" name="Task" runtime="15.0" cores="1">
+		<uses file="task_23_out.dat" link="output" size="5000000" />
+		<uses file="task_10_out.dat" link="input" size="4000000" />
+	</job>
+	<job id="task_24" namespace="param_set_26_v50_q8" name="Task" runtime="14.0" cores="1">
+		<uses file="task_24_out.dat" link="output" size="2000000" />
+		<uses file="task_11_out.dat" link="input" size="8000000" />
+	</job>
+	<job id="task_25" namespace="param_set_26_v50_q8" name="Task" runtime="2.0" cores="1">
+		<uses file="task_25_out.dat" link="output" size="4000000" />
+		<uses file="task_12_out.dat" link="input" size="9000000" />
+	</job>
+	<job id="task_26" namespace="param_set_26_v50_q8" name="Task" runtime="20.0" cores="1">
+		<uses file="task_26_out.dat" link="output" size="4000000" />
+		<uses file="task_13_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_27" namespace="param_set_26_v50_q8" name="Task" runtime="7.0" cores="1">
+		<uses file="task_27_out.dat" link="output" size="3000000" />
+		<uses file="task_14_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_28" namespace="param_set_26_v50_q8" name="Task" runtime="14.0" cores="1">
+		<uses file="task_28_out.dat" link="output" size="5000000" />
+		<uses file="task_15_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_29" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_29_out.dat" link="output" size="2000000" />
+		<uses file="task_16_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_30" namespace="param_set_26_v50_q8" name="Task" runtime="3.0" cores="1">
+		<uses file="task_30_out.dat" link="output" size="7000000" />
+		<uses file="task_16_out.dat" link="input" size="9000000" />
+	</job>
+	<job id="task_31" namespace="param_set_26_v50_q8" name="Task" runtime="10.0" cores="1">
+		<uses file="task_31_out.dat" link="output" size="6000000" />
+		<uses file="task_17_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_32" namespace="param_set_26_v50_q8" name="Task" runtime="12.0" cores="1">
+		<uses file="task_32_out.dat" link="output" size="1000000" />
+		<uses file="task_32_out.dat" link="output" size="5000000" />
+		<uses file="task_32_out.dat" link="output" size="6000000" />
+		<uses file="task_32_out.dat" link="output" size="8000000" />
+		<uses file="task_18_out.dat" link="input" size="9000000" />
+		<uses file="task_19_out.dat" link="input" size="6000000" />
+		<uses file="task_20_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_33" namespace="param_set_26_v50_q8" name="Task" runtime="2.0" cores="1">
+		<uses file="task_33_out.dat" link="output" size="1000000" />
+		<uses file="task_21_out.dat" link="input" size="2000000" />
+		<uses file="task_22_out.dat" link="input" size="3000000" />
+	</job>
+	<job id="task_34" namespace="param_set_26_v50_q8" name="Task" runtime="20.0" cores="1">
+		<uses file="task_34_out.dat" link="output" size="5000000" />
+		<uses file="task_23_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_35" namespace="param_set_26_v50_q8" name="Task" runtime="1.0" cores="1">
+		<uses file="task_35_out.dat" link="output" size="3000000" />
+		<uses file="task_35_out.dat" link="output" size="6000000" />
+		<uses file="task_24_out.dat" link="input" size="2000000" />
+	</job>
+	<job id="task_36" namespace="param_set_26_v50_q8" name="Task" runtime="16.0" cores="1">
+		<uses file="task_36_out.dat" link="output" size="5000000" />
+		<uses file="task_25_out.dat" link="input" size="4000000" />
+		<uses file="task_26_out.dat" link="input" size="4000000" />
+		<uses file="task_27_out.dat" link="input" size="3000000" />
+		<uses file="task_28_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_37" namespace="param_set_26_v50_q8" name="Task" runtime="6.0" cores="1">
+		<uses file="task_37_out.dat" link="output" size="3000000" />
+		<uses file="task_37_out.dat" link="output" size="7000000" />
+		<uses file="task_29_out.dat" link="input" size="2000000" />
+		<uses file="task_30_out.dat" link="input" size="7000000" />
+	</job>
+	<job id="task_38" namespace="param_set_26_v50_q8" name="Task" runtime="4.0" cores="1">
+		<uses file="task_38_out.dat" link="output" size="9000000" />
+		<uses file="task_31_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_39" namespace="param_set_26_v50_q8" name="Task" runtime="5.0" cores="1">
+		<uses file="task_39_out.dat" link="output" size="4000000" />
+		<uses file="task_32_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_40" namespace="param_set_26_v50_q8" name="Task" runtime="11.0" cores="1">
+		<uses file="task_40_out.dat" link="output" size="2000000" />
+		<uses file="task_32_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_41" namespace="param_set_26_v50_q8" name="Task" runtime="7.0" cores="1">
+		<uses file="task_41_out.dat" link="output" size="2000000" />
+		<uses file="task_32_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_42" namespace="param_set_26_v50_q8" name="Task" runtime="16.0" cores="1">
+		<uses file="task_42_out.dat" link="output" size="8000000" />
+		<uses file="task_32_out.dat" link="input" size="8000000" />
+	</job>
+	<job id="task_43" namespace="param_set_26_v50_q8" name="Task" runtime="2.0" cores="1">
+		<uses file="task_43_out.dat" link="output" size="1000000" />
+		<uses file="task_33_out.dat" link="input" size="1000000" />
+	</job>
+	<job id="task_44" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_44_out.dat" link="output" size="5000000" />
+		<uses file="task_34_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_45" namespace="param_set_26_v50_q8" name="Task" runtime="18.0" cores="1">
+		<uses file="task_45_out.dat" link="output" size="8000000" />
+		<uses file="task_35_out.dat" link="input" size="6000000" />
+	</job>
+	<job id="task_46" namespace="param_set_26_v50_q8" name="Task" runtime="18.0" cores="1">
+		<uses file="task_46_out.dat" link="output" size="6000000" />
+		<uses file="task_35_out.dat" link="input" size="3000000" />
+	</job>
+	<job id="task_47" namespace="param_set_26_v50_q8" name="Task" runtime="16.0" cores="1">
+		<uses file="task_47_out.dat" link="output" size="4000000" />
+		<uses file="task_36_out.dat" link="input" size="5000000" />
+	</job>
+	<job id="task_48" namespace="param_set_26_v50_q8" name="Task" runtime="3.0" cores="1">
+		<uses file="task_48_out.dat" link="output" size="9000000" />
+		<uses file="task_37_out.dat" link="input" size="7000000" />
+	</job>
+	<job id="task_49" namespace="param_set_26_v50_q8" name="Task" runtime="9.0" cores="1">
+		<uses file="task_49_out.dat" link="output" size="6000000" />
+		<uses file="task_37_out.dat" link="input" size="3000000" />
+	</job>
+	<job id="task_50" namespace="param_set_26_v50_q8" name="Task" runtime="20.0" cores="1">
+		<uses file="task_50_out.dat" link="output" size="1" />
+		<uses file="task_38_out.dat" link="input" size="9000000" />
+		<uses file="task_39_out.dat" link="input" size="4000000" />
+		<uses file="task_40_out.dat" link="input" size="2000000" />
+		<uses file="task_41_out.dat" link="input" size="2000000" />
+		<uses file="task_42_out.dat" link="input" size="8000000" />
+		<uses file="task_43_out.dat" link="input" size="1000000" />
+		<uses file="task_44_out.dat" link="input" size="5000000" />
+		<uses file="task_45_out.dat" link="input" size="8000000" />
+		<uses file="task_46_out.dat" link="input" size="6000000" />
+		<uses file="task_47_out.dat" link="input" size="4000000" />
+		<uses file="task_48_out.dat" link="input" size="9000000" />
+		<uses file="task_49_out.dat" link="input" size="6000000" />
+	</job>
+</adag>
