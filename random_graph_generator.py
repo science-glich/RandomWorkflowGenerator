@@ -351,7 +351,7 @@ def select_parameter(n, N, Q):
 
 
 if __name__ == "__main__":
-    NUM_DAG_PER_SIZE = 1
+    NUM_DAG_PER_SIZE = 7
     Q = 3
     
     for V in [25, 50, 100]:
@@ -365,7 +365,7 @@ if __name__ == "__main__":
             
             random_graph_generator(v = V, ccr = ccr, alpha = alpha, out_degree = out_degree, beta = beta, p = Q, n = n, N = V)
             
-            base_dir = f"evaluation/n={V},q={Q}"
+            base_dir = f"evaluation/n={V},q={Q},ccr={ccr}"
             os.makedirs(base_dir, exist_ok=True)
             dag_filename = os.path.join(base_dir, f"{V}_tasks_{n}_dag_q={Q}.txt")
             

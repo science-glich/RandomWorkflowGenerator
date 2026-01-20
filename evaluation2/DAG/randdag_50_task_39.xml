@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<adag name="randdag_50_task_39_proc_3" jobCount="50" fileCount="0" childCount="55">
+	<job id="task_0" namespace="randdag_50_task_39_proc_3" name="task1" runtime="18.333333333333332" cores="1">
+		<uses file="task_0_task_1.dat" link="output" size="22548578304" />
+		<uses file="task_0_task_2.dat" link="output" size="23622320128" />
+	</job>
+	<job id="task_1" namespace="randdag_50_task_39_proc_3" name="task2" runtime="14.666666666666666" cores="1">
+		<uses file="task_0_task_1.dat" link="input" size="22548578304" />
+		<uses file="task_1_task_3.dat" link="output" size="21474836480" />
+		<uses file="task_1_task_4.dat" link="output" size="19327352832" />
+	</job>
+	<job id="task_2" namespace="randdag_50_task_39_proc_3" name="task3" runtime="22.666666666666668" cores="1">
+		<uses file="task_0_task_2.dat" link="input" size="23622320128" />
+		<uses file="task_2_task_5.dat" link="output" size="19327352832" />
+		<uses file="task_2_task_6.dat" link="output" size="20401094656" />
+		<uses file="task_2_task_7.dat" link="output" size="20401094656" />
+		<uses file="task_2_task_8.dat" link="output" size="5368709120" />
+		<uses file="task_2_task_9.dat" link="output" size="13958643712" />
+	</job>
+	<job id="task_3" namespace="randdag_50_task_39_proc_3" name="task4" runtime="1.0" cores="1">
+		<uses file="task_1_task_3.dat" link="input" size="21474836480" />
+		<uses file="task_3_task_10.dat" link="output" size="5368709120" />
+	</job>
+	<job id="task_4" namespace="randdag_50_task_39_proc_3" name="task5" runtime="9.0" cores="1">
+		<uses file="task_1_task_4.dat" link="input" size="19327352832" />
+		<uses file="task_4_task_11.dat" link="output" size="17179869184" />
+	</job>
+	<job id="task_5" namespace="randdag_50_task_39_proc_3" name="task6" runtime="21.333333333333332" cores="1">
+		<uses file="task_2_task_5.dat" link="input" size="19327352832" />
+		<uses file="task_5_task_12.dat" link="output" size="5368709120" />
+	</job>
+	<job id="task_6" namespace="randdag_50_task_39_proc_3" name="task7" runtime="19.0" cores="1">
+		<uses file="task_2_task_6.dat" link="input" size="20401094656" />
+		<uses file="task_6_task_13.dat" link="output" size="6442450944" />
+	</job>
+	<job id="task_7" namespace="randdag_50_task_39_proc_3" name="task8" runtime="7.0" cores="1">
+		<uses file="task_2_task_7.dat" link="input" size="20401094656" />
+		<uses file="task_7_task_14.dat" link="output" size="15032385536" />
+	</job>
+	<job id="task_8" namespace="randdag_50_task_39_proc_3" name="task9" runtime="8.0" cores="1">
+		<uses file="task_2_task_8.dat" link="input" size="5368709120" />
+		<uses file="task_8_task_15.dat" link="output" size="9663676416" />
+	</job>
+	<job id="task_9" namespace="randdag_50_task_39_proc_3" name="task10" runtime="9.666666666666666" cores="1">
+		<uses file="task_2_task_9.dat" link="input" size="13958643712" />
+		<uses file="task_9_task_16.dat" link="output" size="13958643712" />
+	</job>
+	<job id="task_10" namespace="randdag_50_task_39_proc_3" name="task11" runtime="1.0" cores="1">
+		<uses file="task_3_task_10.dat" link="input" size="5368709120" />
+		<uses file="task_10_task_17.dat" link="output" size="21474836480" />
+	</job>
+	<job id="task_11" namespace="randdag_50_task_39_proc_3" name="task12" runtime="11.333333333333334" cores="1">
+		<uses file="task_4_task_11.dat" link="input" size="17179869184" />
+		<uses file="task_11_task_18.dat" link="output" size="24696061952" />
+	</job>
+	<job id="task_12" namespace="randdag_50_task_39_proc_3" name="task13" runtime="14.333333333333334" cores="1">
+		<uses file="task_5_task_12.dat" link="input" size="5368709120" />
+		<uses file="task_12_task_19.dat" link="output" size="2147483648" />
+	</job>
+	<job id="task_13" namespace="randdag_50_task_39_proc_3" name="task14" runtime="3.3333333333333335" cores="1">
+		<uses file="task_6_task_13.dat" link="input" size="6442450944" />
+		<uses file="task_13_task_20.dat" link="output" size="8589934592" />
+	</job>
+	<job id="task_14" namespace="randdag_50_task_39_proc_3" name="task15" runtime="3.0" cores="1">
+		<uses file="task_7_task_14.dat" link="input" size="15032385536" />
+		<uses file="task_14_task_21.dat" link="output" size="22548578304" />
+	</job>
+	<job id="task_15" namespace="randdag_50_task_39_proc_3" name="task16" runtime="7.0" cores="1">
+		<uses file="task_8_task_15.dat" link="input" size="9663676416" />
+		<uses file="task_15_task_22.dat" link="output" size="20401094656" />
+	</job>
+	<job id="task_16" namespace="randdag_50_task_39_proc_3" name="task17" runtime="6.333333333333333" cores="1">
+		<uses file="task_9_task_16.dat" link="input" size="13958643712" />
+		<uses file="task_16_task_23.dat" link="output" size="7516192768" />
+	</job>
+	<job id="task_17" namespace="randdag_50_task_39_proc_3" name="task18" runtime="6.666666666666667" cores="1">
+		<uses file="task_10_task_17.dat" link="input" size="21474836480" />
+		<uses file="task_17_task_24.dat" link="output" size="10737418240" />
+	</job>
+	<job id="task_18" namespace="randdag_50_task_39_proc_3" name="task19" runtime="24.0" cores="1">
+		<uses file="task_11_task_18.dat" link="input" size="24696061952" />
+		<uses file="task_18_task_25.dat" link="output" size="5368709120" />
+	</job>
+	<job id="task_19" namespace="randdag_50_task_39_proc_3" name="task20" runtime="24.0" cores="1">
+		<uses file="task_12_task_19.dat" link="input" size="2147483648" />
+		<uses file="task_19_task_26.dat" link="output" size="4294967296" />
+	</job>
+	<job id="task_20" namespace="randdag_50_task_39_proc_3" name="task21" runtime="3.0" cores="1">
+		<uses file="task_13_task_20.dat" link="input" size="8589934592" />
+		<uses file="task_20_task_27.dat" link="output" size="18253611008" />
+	</job>
+	<job id="task_21" namespace="randdag_50_task_39_proc_3" name="task22" runtime="3.3333333333333335" cores="1">
+		<uses file="task_14_task_21.dat" link="input" size="22548578304" />
+		<uses file="task_21_task_28.dat" link="output" size="1073741824" />
+	</job>
+	<job id="task_22" namespace="randdag_50_task_39_proc_3" name="task23" runtime="13.666666666666666" cores="1">
+		<uses file="task_15_task_22.dat" link="input" size="20401094656" />
+		<uses file="task_22_task_29.dat" link="output" size="1073741824" />
+	</job>
+	<job id="task_23" namespace="randdag_50_task_39_proc_3" name="task24" runtime="19.666666666666668" cores="1">
+		<uses file="task_16_task_23.dat" link="input" size="7516192768" />
+		<uses file="task_23_task_30.dat" link="output" size="7516192768" />
+	</job>
+	<job id="task_24" namespace="randdag_50_task_39_proc_3" name="task25" runtime="17.0" cores="1">
+		<uses file="task_17_task_24.dat" link="input" size="10737418240" />
+		<uses file="task_24_task_31.dat" link="output" size="2147483648" />
+	</job>
+	<job id="task_25" namespace="randdag_50_task_39_proc_3" name="task26" runtime="14.333333333333334" cores="1">
+		<uses file="task_18_task_25.dat" link="input" size="5368709120" />
+		<uses file="task_25_task_32.dat" link="output" size="15032385536" />
+	</job>
+	<job id="task_26" namespace="randdag_50_task_39_proc_3" name="task27" runtime="13.333333333333334" cores="1">
+		<uses file="task_19_task_26.dat" link="input" size="4294967296" />
+		<uses file="task_26_task_32.dat" link="output" size="1073741824" />
+	</job>
+	<job id="task_27" namespace="randdag_50_task_39_proc_3" name="task28" runtime="2.0" cores="1">
+		<uses file="task_20_task_27.dat" link="input" size="18253611008" />
+		<uses file="task_27_task_33.dat" link="output" size="17179869184" />
+	</job>
+	<job id="task_28" namespace="randdag_50_task_39_proc_3" name="task29" runtime="22.666666666666668" cores="1">
+		<uses file="task_21_task_28.dat" link="input" size="1073741824" />
+		<uses file="task_28_task_34.dat" link="output" size="10737418240" />
+	</job>
+	<job id="task_29" namespace="randdag_50_task_39_proc_3" name="task30" runtime="4.666666666666667" cores="1">
+		<uses file="task_22_task_29.dat" link="input" size="1073741824" />
+		<uses file="task_29_task_34.dat" link="output" size="10737418240" />
+	</job>
+	<job id="task_30" namespace="randdag_50_task_39_proc_3" name="task31" runtime="25.666666666666668" cores="1">
+		<uses file="task_23_task_30.dat" link="input" size="7516192768" />
+		<uses file="task_30_task_35.dat" link="output" size="8589934592" />
+	</job>
+	<job id="task_31" namespace="randdag_50_task_39_proc_3" name="task32" runtime="16.666666666666668" cores="1">
+		<uses file="task_24_task_31.dat" link="input" size="2147483648" />
+		<uses file="task_31_task_36.dat" link="output" size="9663676416" />
+	</job>
+	<job id="task_32" namespace="randdag_50_task_39_proc_3" name="task33" runtime="12.0" cores="1">
+		<uses file="task_25_task_32.dat" link="input" size="15032385536" />
+		<uses file="task_26_task_32.dat" link="input" size="1073741824" />
+		<uses file="task_32_task_37.dat" link="output" size="5368709120" />
+	</job>
+	<job id="task_33" namespace="randdag_50_task_39_proc_3" name="task34" runtime="18.666666666666668" cores="1">
+		<uses file="task_27_task_33.dat" link="input" size="17179869184" />
+		<uses file="task_33_task_38.dat" link="output" size="6442450944" />
+	</job>
+	<job id="task_34" namespace="randdag_50_task_39_proc_3" name="task35" runtime="24.333333333333332" cores="1">
+		<uses file="task_28_task_34.dat" link="input" size="10737418240" />
+		<uses file="task_29_task_34.dat" link="input" size="10737418240" />
+		<uses file="task_34_task_39.dat" link="output" size="21474836480" />
+	</job>
+	<job id="task_35" namespace="randdag_50_task_39_proc_3" name="task36" runtime="17.0" cores="1">
+		<uses file="task_30_task_35.dat" link="input" size="8589934592" />
+		<uses file="task_35_task_40.dat" link="output" size="12884901888" />
+	</job>
+	<job id="task_36" namespace="randdag_50_task_39_proc_3" name="task37" runtime="13.333333333333334" cores="1">
+		<uses file="task_31_task_36.dat" link="input" size="9663676416" />
+		<uses file="task_36_task_41.dat" link="output" size="19327352832" />
+	</job>
+	<job id="task_37" namespace="randdag_50_task_39_proc_3" name="task38" runtime="12.666666666666666" cores="1">
+		<uses file="task_32_task_37.dat" link="input" size="5368709120" />
+		<uses file="task_37_task_42.dat" link="output" size="8589934592" />
+	</job>
+	<job id="task_38" namespace="randdag_50_task_39_proc_3" name="task39" runtime="3.6666666666666665" cores="1">
+		<uses file="task_33_task_38.dat" link="input" size="6442450944" />
+		<uses file="task_38_task_42.dat" link="output" size="10737418240" />
+	</job>
+	<job id="task_39" namespace="randdag_50_task_39_proc_3" name="task40" runtime="10.333333333333334" cores="1">
+		<uses file="task_34_task_39.dat" link="input" size="21474836480" />
+		<uses file="task_39_task_43.dat" link="output" size="23622320128" />
+	</job>
+	<job id="task_40" namespace="randdag_50_task_39_proc_3" name="task41" runtime="15.666666666666666" cores="1">
+		<uses file="task_35_task_40.dat" link="input" size="12884901888" />
+		<uses file="task_40_task_44.dat" link="output" size="6442450944" />
+	</job>
+	<job id="task_41" namespace="randdag_50_task_39_proc_3" name="task42" runtime="14.666666666666666" cores="1">
+		<uses file="task_36_task_41.dat" link="input" size="19327352832" />
+		<uses file="task_41_task_45.dat" link="output" size="18253611008" />
+	</job>
+	<job id="task_42" namespace="randdag_50_task_39_proc_3" name="task43" runtime="21.0" cores="1">
+		<uses file="task_37_task_42.dat" link="input" size="8589934592" />
+		<uses file="task_38_task_42.dat" link="input" size="10737418240" />
+		<uses file="task_42_task_46.dat" link="output" size="17179869184" />
+	</job>
+	<job id="task_43" namespace="randdag_50_task_39_proc_3" name="task44" runtime="11.333333333333334" cores="1">
+		<uses file="task_39_task_43.dat" link="input" size="23622320128" />
+		<uses file="task_43_task_47.dat" link="output" size="11811160064" />
+	</job>
+	<job id="task_44" namespace="randdag_50_task_39_proc_3" name="task45" runtime="25.0" cores="1">
+		<uses file="task_40_task_44.dat" link="input" size="6442450944" />
+		<uses file="task_44_task_48.dat" link="output" size="17179869184" />
+	</job>
+	<job id="task_45" namespace="randdag_50_task_39_proc_3" name="task46" runtime="7.333333333333333" cores="1">
+		<uses file="task_41_task_45.dat" link="input" size="18253611008" />
+		<uses file="task_45_task_49.dat" link="output" size="16106127360" />
+	</job>
+	<job id="task_46" namespace="randdag_50_task_39_proc_3" name="task47" runtime="10.666666666666666" cores="1">
+		<uses file="task_42_task_46.dat" link="input" size="17179869184" />
+		<uses file="task_46_task_49.dat" link="output" size="22548578304" />
+	</job>
+	<job id="task_47" namespace="randdag_50_task_39_proc_3" name="task48" runtime="14.0" cores="1">
+		<uses file="task_43_task_47.dat" link="input" size="11811160064" />
+		<uses file="task_47_task_49.dat" link="output" size="9663676416" />
+	</job>
+	<job id="task_48" namespace="randdag_50_task_39_proc_3" name="task49" runtime="23.333333333333332" cores="1">
+		<uses file="task_44_task_48.dat" link="input" size="17179869184" />
+		<uses file="task_48_task_49.dat" link="output" size="19327352832" />
+	</job>
+	<job id="task_49" namespace="randdag_50_task_39_proc_3" name="task50" runtime="13.333333333333334" cores="1">
+		<uses file="task_45_task_49.dat" link="input" size="16106127360" />
+		<uses file="task_46_task_49.dat" link="input" size="22548578304" />
+		<uses file="task_47_task_49.dat" link="input" size="9663676416" />
+		<uses file="task_48_task_49.dat" link="input" size="19327352832" />
+	</job>
+	<child ref="task_1">
+		<parent ref="task_0" />
+	</child>
+	<child ref="task_2">
+		<parent ref="task_0" />
+	</child>
+	<child ref="task_3">
+		<parent ref="task_1" />
+	</child>
+	<child ref="task_4">
+		<parent ref="task_1" />
+	</child>
+	<child ref="task_5">
+		<parent ref="task_2" />
+	</child>
+	<child ref="task_6">
+		<parent ref="task_2" />
+	</child>
+	<child ref="task_7">
+		<parent ref="task_2" />
+	</child>
+	<child ref="task_8">
+		<parent ref="task_2" />
+	</child>
+	<child ref="task_9">
+		<parent ref="task_2" />
+	</child>
+	<child ref="task_10">
+		<parent ref="task_3" />
+	</child>
+	<child ref="task_11">
+		<parent ref="task_4" />
+	</child>
+	<child ref="task_12">
+		<parent ref="task_5" />
+	</child>
+	<child ref="task_13">
+		<parent ref="task_6" />
+	</child>
+	<child ref="task_14">
+		<parent ref="task_7" />
+	</child>
+	<child ref="task_15">
+		<parent ref="task_8" />
+	</child>
+	<child ref="task_16">
+		<parent ref="task_9" />
+	</child>
+	<child ref="task_17">
+		<parent ref="task_10" />
+	</child>
+	<child ref="task_18">
+		<parent ref="task_11" />
+	</child>
+	<child ref="task_19">
+		<parent ref="task_12" />
+	</child>
+	<child ref="task_20">
+		<parent ref="task_13" />
+	</child>
+	<child ref="task_21">
+		<parent ref="task_14" />
+	</child>
+	<child ref="task_22">
+		<parent ref="task_15" />
+	</child>
+	<child ref="task_23">
+		<parent ref="task_16" />
+	</child>
+	<child ref="task_24">
+		<parent ref="task_17" />
+	</child>
+	<child ref="task_25">
+		<parent ref="task_18" />
+	</child>
+	<child ref="task_26">
+		<parent ref="task_19" />
+	</child>
+	<child ref="task_27">
+		<parent ref="task_20" />
+	</child>
+	<child ref="task_28">
+		<parent ref="task_21" />
+	</child>
+	<child ref="task_29">
+		<parent ref="task_22" />
+	</child>
+	<child ref="task_30">
+		<parent ref="task_23" />
+	</child>
+	<child ref="task_31">
+		<parent ref="task_24" />
+	</child>
+	<child ref="task_32">
+		<parent ref="task_25" />
+		<parent ref="task_26" />
+	</child>
+	<child ref="task_33">
+		<parent ref="task_27" />
+	</child>
+	<child ref="task_34">
+		<parent ref="task_28" />
+		<parent ref="task_29" />
+	</child>
+	<child ref="task_35">
+		<parent ref="task_30" />
+	</child>
+	<child ref="task_36">
+		<parent ref="task_31" />
+	</child>
+	<child ref="task_37">
+		<parent ref="task_32" />
+	</child>
+	<child ref="task_38">
+		<parent ref="task_33" />
+	</child>
+	<child ref="task_39">
+		<parent ref="task_34" />
+	</child>
+	<child ref="task_40">
+		<parent ref="task_35" />
+	</child>
+	<child ref="task_41">
+		<parent ref="task_36" />
+	</child>
+	<child ref="task_42">
+		<parent ref="task_37" />
+		<parent ref="task_38" />
+	</child>
+	<child ref="task_43">
+		<parent ref="task_39" />
+	</child>
+	<child ref="task_44">
+		<parent ref="task_40" />
+	</child>
+	<child ref="task_45">
+		<parent ref="task_41" />
+	</child>
+	<child ref="task_46">
+		<parent ref="task_42" />
+	</child>
+	<child ref="task_47">
+		<parent ref="task_43" />
+	</child>
+	<child ref="task_48">
+		<parent ref="task_44" />
+	</child>
+	<child ref="task_49">
+		<parent ref="task_45" />
+		<parent ref="task_46" />
+		<parent ref="task_47" />
+		<parent ref="task_48" />
+	</child>
+</adag>
