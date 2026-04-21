@@ -38,13 +38,13 @@ def get_wij(v, p, beta, n, base_dir):
 
     with open(filename, "w") as f:
         for _ in range(1, v + 1):
-            avg_w = random.randint(0, 2 * avg_w_dag)
+            avg_w = random.randint(1, max(1, 2 * avg_w_dag))
             row = []
             for j in range(p):
-                wij = random.randint(
+                wij = max(1, random.randint(
                     math.ceil(avg_w * (1 - beta / 2)),
                     math.ceil(avg_w * (1 + beta / 2))
-                )
+                ))
                 row.append(str(wij))
             f.write("  ".join(row) + "\n")
 
@@ -437,17 +437,19 @@ def random_graph_generator(v, ccr, alpha, out_degree, beta, p, n, base_dir):
     raise RuntimeError(f"Failed to generate a valid DAG shape after {MAX_TRY} attempts.")
 
 if __name__ == "__main__":
-    NUM_DAG_PER_SIZE = 10
-    Q = [4, 8, 12]
+    NUM_DAG_PER_SIZE = 50
+    # Q = [4, 8, 12]
+    Q = [3]
 
     # You can change these to sweep experiments:
     CCR = 1.0
     # ALPHA = random.choice([1.0, 2.0])
     # OUT_DEGREE = random.choice([2, 3, 4, 5])
-    BETA = [0.1, 0.25, 0.5, 1.0, 2.0]
+    # BETA = [0.1, 0.25, 0.5, 1.0, 2.0]
+    BETA = [1.0]
 
     # Where WorkflowSim reads dax:
-    WORKFLOWSIM_DAX_DIR = "/home/howard/Desktop/bcs111111/RandomGraphGenerator_new-master/ev_paper/"
+    WORKFLOWSIM_DAX_DIR = "/home/howard/Desktop/bcs111111/RandomGraphGenerator_new-master/calculate/"
     os.makedirs(WORKFLOWSIM_DAX_DIR, exist_ok=True)
 
     TXT_BASE_ROOT = os.path.join(WORKFLOWSIM_DAX_DIR, "txt")
@@ -471,7 +473,8 @@ if __name__ == "__main__":
     
     MAX_RETRY = 80
 
-    for V in [50, 100, 200, 300, 400, 500, 600, 700, 800 ,900]:
+    # for V in [50, 100, 200, 300, 400, 500, 600, 700, 800 ,900]:
+    for V in [50]:
         for q in Q:
             for b in BETA:
                 for n in range(1, NUM_DAG_PER_SIZE + 1):
@@ -502,13 +505,11 @@ if __name__ == "__main__":
                         OUT_DEGREE = random.choice([2, 3, 4, 5])
 
                         try:
-                            # 生成 txt
                             dag_txt, comp_txt = random_graph_generator(
                                 v=V, ccr=CCR, alpha=ALPHA, out_degree=OUT_DEGREE,
                                 beta=b, p=q, n=n, base_dir=txt_out
                             )
 
-                            # 轉 xml（base_dir 一定要傳 txt_out）
                             convert_txt_to_dax(V, n, q, b, txt_out, dax_out)
 
                             print(f"[OK] V={V}, q={q}, beta={b}, n={n} (alpha={ALPHA}, out={OUT_DEGREE}, try={attempt})")
@@ -528,13 +529,10 @@ if __name__ == "__main__":
 
                         except Exception as e:
                             last_err = repr(e)
-                            # 你要看每次失敗原因可以解開這行
-                            # print(f"[RETRY] V={V}, q={q}, beta={b}, n={n}, alpha={ALPHA}, out={OUT_DEGREE}, try={attempt} -> {last_err}")
                             continue
 
                     if not ok:
                         msg = f"[FAIL] V={V}, q={q}, beta={b}, n={n} after {MAX_RETRY} retries; last_err={last_err}"
                         print(msg)
                         append_error(msg)
-                        # 繼續下一筆，不要整批死
                         continue
